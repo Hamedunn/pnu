@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وضعیت سرور</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1e1e2f;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .server-status {
+            background: #2e2e3d;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+        .server {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 10px;
+            background: #3e3e50;
+            border-radius: 8px;
+        }
+        .server img {
+            width: 24px;
+            height: 16px;
+            border-radius: 2px;
+        }
+        .server .status {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .server .status span {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .buy-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .buy-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="server-status">
+        <h2>وضعیت سرور</h2>
+        <div class="server">
+            <div class="status">
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="پرچم آلمان">
+                <span></span>
+                <p>سرور آلمان</p>
+            </div>
+        </div>
+        <div class="server">
+            <div class="status">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt="پرچم ژاپن">
+                <span></span>
+                <p>سرور ژاپن</p>
+            </div>
+        </div>
+    </div>
+    <a href="https://t.me/v2raycheapbot" class="buy-button">خرید</a>
+</body>
+</html>

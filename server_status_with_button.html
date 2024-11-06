@@ -48,11 +48,21 @@
             display: inline-block;
             width: 12px;
             height: 12px;
-            background-color: #4CAF50;
             border-radius: 50%;
             animation: blink 1s infinite;
         }
+        .server .status .green {
+            background-color: #4CAF50; /* چراغ سبز */
+        }
+        .server .status .red {
+            background-color: #f44336; /* چراغ قرمز */
+            animation: blink-red 1s infinite; /* انیمیشن چشمک زدن قرمز */
+        }
         @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        @keyframes blink-red {
             0%, 100% { opacity: 1; }
             50% { opacity: 0; }
         }
@@ -80,15 +90,22 @@
         <div class="server">
             <div class="status">
                 <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="پرچم آلمان">
-                <span></span>
+                <span class="red"></span> <!-- چراغ قرمز برای سرور آلمان -->
                 <p>سرور آلمان</p>
             </div>
         </div>
         <div class="server">
             <div class="status">
                 <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt="پرچم ژاپن">
-                <span></span>
+                <span class="green"></span> <!-- چراغ سبز برای سرور ژاپن -->
                 <p>سرور ژاپن</p>
+            </div>
+        </div>
+        <div class="server">
+            <div class="status">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg" alt="پرچم هلند">
+                <span class="green"></span> <!-- چراغ سبز برای سرور هلند -->
+                <p>سرور هلند</p>
             </div>
         </div>
     </div>

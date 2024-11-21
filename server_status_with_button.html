@@ -49,16 +49,16 @@
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            animation: blink 1s infinite;
         }
         .server .status .green {
-            background-color: #4CAF50; /* چراغ سبز */
+            background-color: #4CAF50;
+            animation: blink-green 1s infinite; /* انیمیشن چشمک زدن سبز */
         }
         .server .status .red {
-            background-color: #f44336; /* چراغ قرمز */
+            background-color: #f44336;
             animation: blink-red 1s infinite; /* انیمیشن چشمک زدن قرمز */
         }
-        @keyframes blink {
+        @keyframes blink-green {
             0%, 100% { opacity: 1; }
             50% { opacity: 0; }
         }
@@ -90,7 +90,7 @@
         <div class="server">
             <div class="status">
                 <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="پرچم آلمان">
-                <span class="green"></span> <!-- چراغ سبز برای سرور آلمان -->
+                <span class="red"></span> <!-- چراغ قرمز برای سرور آلمان -->
                 <p>سرور آلمان</p>
             </div>
         </div>
@@ -110,5 +110,6 @@
         </div>
     </div>
     <a href="https://t.me/mamacita_v2ray" class="button">پشتیبانی</a>
+    <a href="https://t.me/v2raycheapbot" class="button">خرید سرور</a> <!-- دکمه خرید سرور -->
 </body>
 </html>

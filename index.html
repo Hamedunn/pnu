@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>همکلاسی | علوم تربیتی پیام نور بندرعباس</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts/webfonts/Vazirmatn.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Vazirmatn';
+            src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts/webfonts/Vazirmatn-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn-hover-effect:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(74, 222, 128, 0.4);
+        }
+        .btn-hover-effect:active {
+            transform: translateY(0);
+        }
+        .dark-mode body {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+        .dark-mode .dark-bg {
+            background-color: #2d3748;
+        }
+        .dark-mode .dark-border {
+            border-color: #4a5568;
+        }
+        .dark-mode .dark-text {
+            color: #e2e8f0;
+        }
+        .dark-mode .dark-text-secondary {
+            color: #a0aec0;
+        }
+        .dark-mode .dark-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Dark Mode Toggle -->
+    <div class="fixed top-4 left-4 z-50">
+        <button id="darkModeToggle" class="p-2 rounded-full bg-white shadow-md dark-bg dark-border dark-text">
+            <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm dark-bg dark-border dark-shadow">
+        <div class="container mx-auto px-4 py-8">
+            <div class="text-center">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-800 dark-text mb-2">خوش اومدی هم‌کلاسی 🌸📚</h1>
+                <p class="text-gray-500 dark-text-secondary text-lg">علوم تربیتی واحد پیام نور بندرعباس</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-2xl mx-auto">
+            <!-- Buttons Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Button 1 -->
+                <a href="https://hamedunn.github.io/server/chart.html" target="_blank" 
+                   class="btn-hover-effect transition-all duration-300 bg-white rounded-xl shadow-sm p-6 flex items-center justify-between border border-gray-100 hover:border-green-300 dark-bg dark-border dark-text dark-shadow">
+                    <span class="text-lg font-medium text-gray-700 dark-text">چارت درسی 📒</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 dark-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+
+                <!-- Button 2 -->
+                <a href="https://hamedunn.github.io/server/manabe.html" target="_blank" 
+                   class="btn-hover-effect transition-all duration-300 bg-white rounded-xl shadow-sm p-6 flex items-center justify-between border border-gray-100 hover:border-green-300 dark-bg dark-border dark-text dark-shadow">
+                    <span class="text-lg font-medium text-gray-700 dark-text">منابع و حذفیات 🚦</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 dark-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+
+                <!-- Button 3 -->
+                <a href="https://hamedunn.github.io/server/nemone.html" target="_blank" 
+                   class="btn-hover-effect transition-all duration-300 bg-white rounded-xl shadow-sm p-6 flex items-center justify-between border border-gray-100 hover:border-green-300 dark-bg dark-border dark-text dark-shadow">
+                    <span class="text-lg font-medium text-gray-700 dark-text">نمونه سوالات و کتاب‌ها 📄</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 dark-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+
+                <!-- Button 4 -->
+                <a href="https://chat.whatsapp.com/LfNH12Kxb8UFEhx2FcC4AB" target="_blank" 
+                   class="btn-hover-effect transition-all duration-300 bg-white rounded-xl shadow-sm p-6 flex items-center justify-between border border-gray-100 hover:border-green-300 dark-bg dark-border dark-text dark-shadow">
+                    <span class="text-lg font-medium text-gray-700 dark-text">گروه واتساپ علوم تربیتی 📞</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 dark-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+
+                <!-- Button 5 -->
+                <a href="https://wa.me/+989903608594" target="_blank" 
+                   class="btn-hover-effect transition-all duration-300 bg-white rounded-xl shadow-sm p-6 flex items-center justify-between border border-gray-100 hover:border-green-300 dark-bg dark-border dark-text dark-shadow">
+                    <span class="text-lg font-medium text-gray-700 dark-text">پشتیبانی 🛎️</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 dark-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 dark-bg dark-border mt-12">
+        <div class="container mx-auto px-4 py-6">
+            <div class="text-center text-gray-500 dark-text-secondary text-sm">
+                <p>© ۱۴۰۴ حامد برزکار</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const sunIcon = document.getElementById('sunIcon');
+            const moonIcon = document.getElementById('moonIcon');
+            
+            // Check for saved user preference or system preference
+            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+            const currentTheme = localStorage.getItem('theme');
+            
+            if (currentTheme === 'dark' || (!currentTheme && prefersDarkScheme.matches)) {
+                document.body.classList.add('dark-mode');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            } else {
+                document.body.classList.remove('dark-mode');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            }
+            
+            // Toggle dark mode
+            darkModeToggle.addEventListener('click', function() {
+                if (document.body.classList.contains('dark-mode')) {
+                    document.body.classList.remove('dark-mode');
+                    localStorage.setItem('theme', 'light');
+                    sunIcon.classList.remove('hidden');
+                    moonIcon.classList.add('hidden');
+                } else {
+                    document.body.classList.add('dark-mode');
+                    localStorage.setItem('theme', 'dark');
+                    sunIcon.classList.add('hidden');
+                    moonIcon.classList.remove('hidden');
+                }
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Hamedtttt/rot" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
